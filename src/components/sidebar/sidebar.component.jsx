@@ -43,13 +43,13 @@ export default function Sidebar({
             colour="red"
             onClick={() => signOutUser(setUser)}
           >
-            Sign Out
+            Iesi din cont
           </CustomButton>
         </div>
 
         {/* Options */}
         <div className="pt-4">
-          <h1 className="px-4 text-xs font-medium text-zinc-400 pb-2">PAGES</h1>
+          <h1 className="px-4 text-xs font-medium text-zinc-400 pb-2">PAGINI</h1>
           <div
             className={`px-8 py-2 w-full transition-all duration-[125ms] ${
               activeTab == "dashboard" ? "bg-zinc-700" : ""
@@ -67,7 +67,7 @@ export default function Sidebar({
             onClick={() => setActiveTab("due")}
           >
             <img className="" />
-            <h1 className="text-sm">Due today</h1>
+            <h1 className="text-sm">Scadenta astazi</h1>
           </div>
 
           <div
@@ -77,7 +77,7 @@ export default function Sidebar({
             onClick={() => setActiveTab("new")}
           >
             <img className="" />
-            <h1 className="text-sm">New cards</h1>
+            <h1 className="text-sm">Carduri noi</h1>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ export default function Sidebar({
               }
             }}
           >
-            + Add deck
+            + Adauagati un pachet
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function Auth() {
         }}
       >
         <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-zinc-800 rounded-md group-hover:bg-opacity-0">
-          Sign in with Google.
+          Autentificare cu Google
         </span>
       </button>
     </div>

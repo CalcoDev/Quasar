@@ -410,11 +410,11 @@ export default function Home() {
       >
         <div className="relative p-4 w-full max-w-2xl h-full flex flex-col">
           <div className="relative w-full border-b-2 pb-2 border-b-zinc-500 flex justify-between items-center">
-            <h1 className="text-md font-medium">Create a new deck</h1>
+            <h1 className="text-md font-medium">Creati un pachet nou</h1>
           </div>
 
           <div className="flex justify-center items-center flex-col flex-1">
-            <span className="mb-2">Deck name: </span>
+            <span className="mb-2">Numele pachetului: </span>
             <input
               type="text"
               className="resize-none p-2 rounded-sm bg-zinc-800 focus:outline-none text-sm"
@@ -448,7 +448,7 @@ export default function Home() {
               }}
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-800 rounded-md group-hover:bg-opacity-0">
-                Create deck
+                Creati pachetul
               </span>
             </button>
           </div>
@@ -508,7 +508,7 @@ export default function Home() {
                   colour="red"
                   onClick={deleteSelectedCard}
                 >
-                  Delete
+                  Stergeti
                 </CustomButton>
               )}
             </div>
@@ -541,7 +541,7 @@ export default function Home() {
                       colour="green"
                       onClick={cardRight}
                     >
-                      Right
+                      Corect
                     </CustomButton>
 
                     <CustomButton
@@ -549,7 +549,7 @@ export default function Home() {
                       colour="red"
                       onClick={cardWrong}
                     >
-                      Wrong
+                      Gresit
                     </CustomButton>
                   </div>
                 )}
@@ -583,7 +583,7 @@ export default function Home() {
             >
               {filterCardsByDeck !== null
                 ? filterCardsByDeck.name
-                : "Don't filter"}
+                : "Fara filtru"}
             </CustomButton>
 
             {/* TODO(calco): Dropdown */}
@@ -616,7 +616,7 @@ export default function Home() {
                     setShowDropdown(false);
                   }}
                 >
-                  Don't filter
+                  Fara filtru
                 </li>
               </ul>
             </div>

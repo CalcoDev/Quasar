@@ -20,8 +20,8 @@ export default function Topbar({
         />
       </div>
       <div className="flex-1 text-center">
-        {activeTab == "due" && <div>{dueCards.length} cards due</div>}
-        {activeTab == "new" && <div>{newCards.length} new cards</div>}
+        {activeTab == "due" && <div>{dueCards.length} carduri cu scadenta astazi</div>}
+        {activeTab == "new" && <div>{newCards.length} carduri noi</div>}
         {activeTab == "dashboard" && <div>Dashboard</div>}
         {activeTab == "deck" &&
           selectedDeckIndex !== -1 &&

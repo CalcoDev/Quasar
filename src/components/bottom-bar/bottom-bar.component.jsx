@@ -28,12 +28,12 @@ export default function BottomBar({
   });
 
   return (
-    <div className="w-100 min-h-[4rem] bg-zinc-700 flex border-t-[2px] border-zinc-600 text-zinc-300">
+    <div className="w-100 min-h-[4rem] bg-zinc-700 flex border-t-[2px] border-zinc-600 text-zinc-300 text-center">
       <div
         className="flex-1 flex justify-center items-center"
         onClick={() => setActive("due")}
       >
-        Due today
+        Scadenta astazi
       </div>
 
       <div
@@ -47,20 +47,20 @@ export default function BottomBar({
       >
         <div className="relative p-4 w-full max-w-2xl h-full flex flex-col">
           <div className="relative w-full text-center border-b-2 pb-2 border-b-zinc-500">
-            Add a new card
+            Adaugati un card nou
           </div>
 
           <div className="relative flex flex-col flex-1">
             <textarea
               value={front}
               onChange={(e) => setFront(e.target.value)}
-              placeholder="Front side"
+              placeholder="Fata"
               className="resize-none flex-1 my-2 p-2 rounded-sm bg-zinc-800 focus:outline-none text-sm"
             />
             <textarea
               value={back}
               onChange={(e) => setBack(e.target.value)}
-              placeholder="Back side"
+              placeholder="Spate"
               className="resize-none flex-1 my-2 p-2 rounded-sm bg-zinc-800 focus:outline-none text-sm"
             />
           </div>
@@ -90,7 +90,7 @@ export default function BottomBar({
               className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-700 rounded-md group-hover:bg-opacity-0">
-                Add card
+                Adaugati cardul
               </span>
             </button>
           </div>
@@ -105,8 +105,6 @@ export default function BottomBar({
             setShowModal(true);
             setInAModal(true);
           }
-
-          console.log(selectedDeckRef);
         }}
       >
         +
@@ -116,7 +114,7 @@ export default function BottomBar({
         className="flex-1 flex justify-center items-center"
         onClick={() => setActive("new")}
       >
-        New cards
+        Carduri noi
       </div>
     </div>
   );
