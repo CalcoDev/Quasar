@@ -30,7 +30,7 @@ export default function Sidebar({
   return (
     <div
       ref={sidebarRef}
-      className={`${
+      className={`max-w-[350px] ${
         sidebarOpen ? "w-[85%]" : "w-0"
       } bg-gradient-to-r from-zinc-800 to-zinc-900 h-screen absolute z-10 top-0 left-0 overflow-x-hidden transition-all duration-300 flex flex-col`}
     >
